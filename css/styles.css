@@ -1,3 +1,11 @@
+/* Base Styles */
+
+html {
+  font-family: 'Fira Sans', sans-serif;
+  box-sizing: border-box;
+}
+
+
 .divider1 {
   height: 5px;
   background: black;
@@ -16,4 +24,126 @@
 .divider4 {
   height: 3px;
   background: black;
+}
+
+.main-header {
+  color: white;
+  display: inline-block;
+  font-size: 1.5em;
+}
+
+fieldset {
+  border: none;
+}
+
+
+header {
+  text-align: center;
+  background: #333438;
+  height: 75px;
+}
+
+.signup {
+  text-align: center;
+}
+
+.signup-head {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.signup-text {
+  margin-bottom: 50px;
+}
+
+.contact, .newsletter {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-top: 25px;
+  margin-bottom: 15px;
+}
+
+.formdiv {
+  margin-top: 25px;
+}
+
+input[type=text], input[type=email] {
+  width: 95%;
+  height: 40px;
+  background-color: #dbdbdb;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+input:focus {
+  border: 2px solid;
+}
+
+select {
+  height: 60px;
+  width: 95%;
+  background-color: #dbdbdb;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+#zip {
+  width: 40%;
+}
+
+input[type=checkbox], input[type=radio] {
+  margin-bottom: 15px;
+}
+
+textarea {
+  width: 95%;
+  background-color: #dbdbdb;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  padding: 5px;
+  border: none;
+}
+
+button {
+  width: 95%;
+  height: 75px;
+  background-color: #1ab2a8;
+  color: white;
+  font-size: 1.5em;
+  text-align: center;
+}
+
+footer {
+  text-align: center;
+  font-style: italic;
+}
+
+/* Media Queries */
+
+@media (min-width: 768px) {
+  .formdiv {
+    display: flex;
+  }
+
+.formdiv {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.divider1, .divider2, .divider3 {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+  
+
+
+
+
+
 }
