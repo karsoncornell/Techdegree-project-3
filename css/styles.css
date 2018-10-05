@@ -5,7 +5,9 @@ html {
   box-sizing: border-box;
 }
 
-
+.formlist {
+  list-style: none;
+}
 .divider1 {
   height: 5px;
   background: black;
@@ -100,7 +102,7 @@ input[type=checkbox], input[type=radio] {
 }
 
 textarea {
-  width: 95%;
+  width: 100%;
   background-color: #dbdbdb;
   margin-top: 10px;
   margin-bottom: 20px;
@@ -110,7 +112,7 @@ textarea {
 }
 
 button {
-  width: 95%;
+  width: 100%;
   height: 75px;
   background-color: #1ab2a8;
   color: white;
@@ -126,24 +128,29 @@ footer {
 /* Media Queries */
 
 @media (min-width: 768px) {
-  .formdiv {
-    display: flex;
-  }
 
 .formdiv {
-  max-width: 600px;
-  margin: 0 auto;
+max-width: 600px;
+margin: 0 auto;
 }
 
-.divider1, .divider2, .divider3 {
-    max-width: 600px;
-    margin: 0 auto;
+li {
+display: flex;
+
 }
 
-  
+li label {
+margin: auto;
+flex: 1;
+}
 
+li input, select {
+flex: 2;
+}
 
-
-
+#zip {
+  flex: 1;
+  justify-content: flex-start;
+}
 
 }
