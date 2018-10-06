@@ -21,6 +21,7 @@ html {
 .divider3 {
   height: 3px;
   background: black;
+  margin-bottom: 25px;
 }
 
 .divider4 {
@@ -69,7 +70,7 @@ header {
   margin-top: 25px;
 }
 
-input[type=text], input[type=email] {
+input[type=text], input[type=email], input[type=tel] {
   width: 95%;
   height: 40px;
   background-color: #dbdbdb;
@@ -107,7 +108,7 @@ textarea {
   margin-top: 10px;
   margin-bottom: 20px;
   border-radius: 5px;
-  padding: 5px;
+  padding: 0px;
   border: none;
 }
 
@@ -123,6 +124,10 @@ button {
 footer {
   text-align: center;
   font-style: italic;
+}
+
+ul {
+  padding-left: 0;
 }
 
 /* Media Queries */
@@ -152,5 +157,7 @@ flex: 2;
   flex: 1;
   justify-content: flex-start;
 }
+
+
 
 }
